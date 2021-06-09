@@ -7,7 +7,8 @@ class Footer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      vote: 0
+      vote: 0,
+      title: this.props.title
     }
   }
   handleClick = () => {

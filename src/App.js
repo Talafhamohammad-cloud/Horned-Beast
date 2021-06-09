@@ -16,6 +16,10 @@ class App extends React.Component {
       showBeast: false,
     }
   }
+  
+  liftStateUp = (Main) => {
+    this.setState({ activeNode: Main })
+  }
 
   showModal = (param) => {
     let result = imgArr.find(element => {
