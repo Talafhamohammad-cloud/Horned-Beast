@@ -18,9 +18,12 @@ class App extends React.Component {
   }
 
   showModal = (param) => {
-    let result = imgArr.find(element =>  {
+    let result = imgArr.find(element => {
       if (element.title === param) {
         return element;
+      }
+      else {
+        return "";
       }
     });
     this.setState({
